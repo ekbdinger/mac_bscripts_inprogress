@@ -30,7 +30,7 @@ drush si --db-url=mysql://root:root@localhost:8889/$drupal_root
 echo " site installed!"
 echo " "
 echo " "
-ls
+cd $drupal_root
 sleep 1
 drush upwd admin --password=admin
 echo " "
