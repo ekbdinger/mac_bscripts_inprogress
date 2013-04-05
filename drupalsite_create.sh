@@ -26,17 +26,17 @@ pwd
 echo " Creating MySQL Database"
 echo " "
 echo " "
-drush si --db-url=mysql://root:root@localhost:8889/$drupal_root
+drush si -y --db-url=mysql://root:root@localhost:8889/$drupal_root --account-name=admin --account-pass=admin --account-mail=admin@example.com --site-mail=admin@example.com
 echo " site installed!"
 echo " "
-echo " "
-cd $drupal_root
+drush dl module_filter admin_menu ctools devel entity features module_filter panels rules views
+echo " Modules downloaded"
+ drush dis -y toolbar
+ echo " "
 sleep 1
-drush upwd admin --password=admin
 echo " "
+drush en -y module_filter admin_menu_toolbar ctools devel_generate entity features module_filter panels rules_admin views_ui
 echo " "
-echo "admin password changed"
-echo " "
+echo " Modules enabled!"
 echo " "
 echo " Your new Drupal site is installed locally.  Happy Drupaling!"
-# echo " log onto your new site localhost:8888"
