@@ -13,7 +13,9 @@ read -p "Enter your selection:  " drupal_root;
 echo " ";
 # echo $drupal_name  // for debugging purposes.  Good until this point
 
-cd ~/sites/
+# cd ~/sites/
+# cd "$(dirname "$0")"
+cd $PWD
 echo "Downloading Drupal..."
 echo " "
 echo " "
