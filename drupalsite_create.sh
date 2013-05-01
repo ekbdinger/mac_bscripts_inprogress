@@ -31,13 +31,13 @@ echo " "
 drush si -y --db-url=mysql://root:root@localhost:8889/$drupal_root --account-name=admin --account-pass=admin --account-mail=admin@example.com --site-mail=admin@example.com
 echo " site installed!"
 echo " "
-drush dl module_filter admin_menu ctools devel entity features module_filter panels rules views backup_migrate
+drush dl module_filter admin_menu ctools devel entity features module_filter panels rules views backup_migrate strongarm
 echo " Modules downloaded"
  drush dis -y toolbar
  echo " "
 sleep 1
 echo " "
-drush en -y module_filter admin_menu_toolbar ctools devel_generate entity features module_filter panels rules_admin views_ui backup_migrate
+drush en -y module_filter admin_menu_toolbar ctools devel_generate entity features module_filter panels rules_admin views_ui backup_migrate strongarm
 echo " "
 echo " Modules enabled!"
 echo " "
