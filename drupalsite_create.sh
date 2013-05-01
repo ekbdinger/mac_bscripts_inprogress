@@ -41,4 +41,7 @@ drush en -y module_filter admin_menu_toolbar ctools devel_generate entity featur
 echo " "
 echo " Modules enabled!"
 echo " "
+drush vset user_register "0"
+echo " "
+echo " "
 echo " Your new Drupal site is installed locally.  Happy Drupaling!"
