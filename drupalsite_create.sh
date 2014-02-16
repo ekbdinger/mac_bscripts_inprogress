@@ -33,7 +33,7 @@ echo " site installed!"
 echo " "
 drush dl module_filter admin_menu ctools devel entity features module_filter panels rules views backup_migrate strongarm
 echo " Modules downloaded"
- drush dis -y toolbar
+ drush dis -y toolbar overlay
  echo " "
 sleep 1
 echo " "
